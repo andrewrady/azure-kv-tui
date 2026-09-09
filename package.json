@@ -1,0 +1,26 @@
+{
+  "name": "kv-secrets-tui",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "kv-secrets-tui": "src/index.ts"
+  },
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "@azure/arm-keyvault": "^5.0.0",
+    "@azure/arm-subscriptions": "5.1.0",
+    "@azure/identity": "^4.13.2",
+    "@azure/keyvault-secrets": "^4.11.2",
+    "@opentui/core": "^0.5.11"
+  }
+}
