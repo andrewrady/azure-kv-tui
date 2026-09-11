@@ -9,6 +9,14 @@ This tool **only reads**. It never creates, updates, or deletes a secret --
 `SecretService` only ever calls `listPropertiesOfSecrets`,
 `listPropertiesOfSecretVersions`, and `getSecret`.
 
+## Screenshots
+
+Rendered from mock data, not a real vault.
+
+| Secret list | Details (hidden) | Details (revealed) |
+|---|---|---|
+| ![Secret list](screenshots/secret-list.png) | ![Secret details with value hidden](screenshots/secret-detail-hidden.png) | ![Secret details with value revealed](screenshots/secret-detail-revealed.png) |
+
 ## Prerequisites
 
 - **[Bun](https://bun.sh) >= 1.3.0** -- OpenTUI's native Zig core requires
